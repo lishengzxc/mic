@@ -71,6 +71,8 @@ function onSuccess(stream){
 function onError(){
 	mystatus.innerHTML = "获取音频时好像出了点问题。"
 }
+	var utterThis = new window.SpeechSynthesisUtterance('你好，世界！');
+window.speechSynthesis.speak(utterThis);
 </script>
 </body>
 </html>
